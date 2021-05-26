@@ -22,5 +22,5 @@ echo 'Running autoreconf -ifv...'
 
 if test -z "$NOCONFIGURE" ; then
 	echo 'Configuring...'
-	"${bs_dir}"/configure CFLAGS="-O2 -fomit-frame-pointer -fno-stack-protector" "$@"
+	"${bs_dir}"/configure CFLAGS="-O2 -fomit-frame-pointer -fno-stack-protector -fcommon" "$@"
 fi
